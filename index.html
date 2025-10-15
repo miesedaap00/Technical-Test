@@ -85,68 +85,68 @@
         </div>
 
         <div class="d-flex flex-grow-1" id="wrapper">
-            <div class="text-sidebar bg-white" id="textSidebar">
+           <div class="text-sidebar bg-white" id="textSidebar">
                 <div class="list-group list-group-flush py-2 px-3">
                     <a class="list-group-item list-group-item-action p-3 active" href="#!">
                         <div class="d-flex align-items-center">
-                            <div class="text-sidebar-icon-wrapper active-icon me-3">
+                            <span class="sidebar-icon-container me-3">
                                 <i class="fas fa-address-book"></i>
-                            </div>
+                            </span>
                             <span class="fw-bold">All Contacts</span>
                             <span class="badge bg-success rounded-pill ms-auto">99</span>
                         </div>
-                        <small class="text-muted ms-5">All messages unified</small>
+                        <small class="text-muted" style="margin-left: 47px;">All messages unified</small>
                     </a>
                     <a class="list-group-item list-group-item-action border-top p-3" href="#!">
                         <div class="d-flex align-items-center">
-                            <div class="text-sidebar-icon-wrapper me-3">
+                            <span class="sidebar-icon-container me-3">
                                 <i class="fas fa-briefcase"></i>
-                            </div>
+                            </span>
                             Business
                         </div>
                     </a>
                     <a class="list-group-item list-group-item-action border-top p-3" href="#!">
                         <div class="d-flex align-items-center">
-                            <div class="text-sidebar-icon-wrapper me-3">
+                            <span class="sidebar-icon-container me-3">
                                 <i class="fas fa-user-friends"></i>
-                            </div>
+                            </span>
                             Personal
                         </div>
                     </a>
                     <a class="list-group-item list-group-item-action border-top p-3" href="#!">
                         <div class="d-flex align-items-center">
-                            <div class="text-sidebar-icon-wrapper me-3">
+                            <span class="sidebar-icon-container me-3">
                                 <i class="fas fa-cloud"></i>
-                            </div>
+                            </span>
                             Cloud
                         </div>
                     </a>
                     <a class="list-group-item list-group-item-action border-top p-3" href="#!">
                         <div class="d-flex align-items-center">
-                            <div class="text-sidebar-icon-wrapper me-3">
+                            <span class="sidebar-icon-container me-3">
                                 <i class="fas fa-users"></i>
-                            </div>
+                            </span>
                             Customers
                         </div>
                     </a>
                     <a class="list-group-item list-group-item-action border-top text-muted" href="#!">
                         <div class="d-flex align-items-center">
-                            <div class="text-sidebar-icon-wrapper me-3">
+                            <span class="sidebar-icon-container me-3">
                                 <i class="fas fa-plus-circle"></i>
-                            </div>
+                            </span>
                             Type to add new group
                         </div>
                     </a>
                 </div>
-                <div class="list-group list-group-flush mt-5 py-2">
+                <div class="list-group list-group-flush mt-auto py-2">
                     <a class="list-group-item list-group-item-action p-3 text-danger" href="#!">
                         <div class="d-flex align-items-center">
-                            <div class="text-sidebar-icon-wrapper me-3">
+                            <span class="sidebar-icon-container me-3">
                                 <i class="fas fa-trash-alt"></i>
-                            </div>
+                            </span>
                             Deleted
                         </div>
-                        <small class="text-muted ms-5">Removed contacts</small>
+                        <small class="text-muted" style="margin-left: 54px;">Removed contacts</small>
                     </a>
                 </div>
             </div>
@@ -156,81 +156,159 @@
                     <table class="table table-borderless mb-0" style="min-height: 84vh;">
                         <tbody>
                             <tr data-bs-toggle="offcanvas" data-bs-target="#contactDetailOffcanvas" aria-controls="contactDetailOffcanvas">
-                                <td class="ps-4 d-flex align-items-center position-relative">
-                                    <img src="https://i.pravatar.cc/35?img=2" class="avatarprofilecontact" alt="Avatar">
-                                    <span class="status-indicator online"></span>
-                                    Nicholas Gordon
+                                <td class="ps-4 position-relative">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://i.pravatar.cc/35?img=2" class="avatarprofilecontact" alt="Avatar">
+                                        <span class="status-indicator online"></span>
+                                        <span class="ms-2">Nicholas Gordon</span> 
+                                    </div>
                                 </td>
-                                <td class="text-muted">Developer</td>
-                                <td class="text-muted">490-645-3877</td>
+                                <td class="text">Developer</td>
+                                <td class="text">490-645-3877</td>
                                 <td><span class="badge custom-badge-business p-2">Business</span></td>
                                 <td class="table-actions">
-                                    <i class="fas fa-phone-alt me-3 text-muted"></i>
-                                    <i class="fas fa-envelope me-3 text-muted"></i>
-                                    <i class="fas fa-ellipsis-h text-muted"></i>
+                                    <a href="#!" class="action-btn"><i class="fas fa-envelope"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-phone-alt"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-ellipsis-h"></i></a>
                                 </td>
                             </tr>
                             <tr data-bs-toggle="offcanvas" data-bs-target="#contactDetailOffcanvas" aria-controls="contactDetailOffcanvas">
-                                <td class="ps-4 d-flex align-items-center position-relative">
-                                    <img src="https://i.pravatar.cc/35?img=3" class="avatarprofilecontact" alt="Avatar">
-                                    <span class="status-indicator online"></span>
-                                    Bradley Malone
+                                <td class="ps-4 position-relative">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://i.pravatar.cc/35?img=3" class="avatarprofilecontact" alt="Avatar">
+                                        <span class="status-indicator online"></span>
+                                        <span class="ms-2">Bradley Malone</span>
+                                    </div>
                                 </td>
-                                <td class="text-muted">Sales Manager</td>
-                                <td class="text-muted">940-724-0374</td>
+                                <td class="text">Sales Manager</td>
+                                <td class="text">940-724-0374</td>
                                 <td><span class="badge custom-badge-business p-2">Business</span></td>
                                 <td class="table-actions">
-                                    <i class="fas fa-phone-alt me-3 text-muted"></i>
-                                    <i class="fas fa-envelope me-3 text-muted"></i>
-                                    <i class="fas fa-ellipsis-h text-muted"></i>
+                                    <a href="#!" class="action-btn"><i class="fas fa-envelope"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-phone-alt"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-ellipsis-h"></i></a>
                                 </td>
                             </tr>
                             <tr data-bs-toggle="offcanvas" data-bs-target="#contactDetailOffcanvas" aria-controls="contactDetailOffcanvas">
-                                <td class="ps-4 d-flex align-items-center position-relative">
-                                    <img src="https://i.pravatar.cc/35?img=4" class="avatarprofilecontact" alt="Avatar">
-                                    <span class="status-indicator offline"></span>
-                                    Janie Todd
+                                <td class="ps-4 position-relative">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://i.pravatar.cc/35?img=4" class="avatarprofilecontact" alt="Avatar">
+                                        <span class="status-indicator offline"></span>
+                                        <span class="ms-2">Janie Todd</span>
+                                    </div>
                                 </td>
-                                <td class="text-muted">Project Manager</td>
-                                <td class="text-muted">171-867-8227</td>
+                                <td class="text">Project Manager</td>
+                                <td class="text">171-867-8227</td>
                                 <td><span class="badge custom-badge-business p-2">Business</span></td>
                                 <td class="table-actions">
-                                    <i class="fas fa-phone-alt me-3 text-muted"></i>
-                                    <i class="fas fa-envelope me-3 text-muted"></i>
-                                    <i class="fas fa-ellipsis-h text-muted"></i>
+                                    <a href="#!" class="action-btn"><i class="fas fa-envelope"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-phone-alt"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-ellipsis-h"></i></a>
                                 </td>
                             </tr>
                             <tr data-bs-toggle="offcanvas" data-bs-target="#contactDetailOffcanvas" aria-controls="contactDetailOffcanvas">
-                                <td class="ps-4 d-flex align-items-center position-relative">
-                                    <img src="https://i.pravatar.cc/35?img=5" class="avatarprofilecontact" alt="Avatar">
-                                    <span class="status-indicator online"></span>
-                                    Marvin Lambert
+                                <td class="ps-4 position-relative">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://i.pravatar.cc/35?img=5" class="avatarprofilecontact" alt="Avatar">
+                                        <span class="status-indicator online"></span>
+                                        <span class="ms-2">Marvin Lambert</span>
+                                    </div>
                                 </td>
-                                <td class="text-muted">Designer</td>
-                                <td class="text-muted">487-646-4299</td>
+                                <td class="text">Designer</td>
+                                <td class="text">487-646-4299</td>
                                 <td><span class="badge custom-badge-business p-2">Business</span></td>
                                 <td class="table-actions">
-                                    <i class="fas fa-phone-alt me-3 text-muted"></i>
-                                    <i class="fas fa-envelope me-3 text-muted"></i>
-                                    <i class="fas fa-ellipsis-h text-muted"></i>
+                                    <a href="#!" class="action-btn"><i class="fas fa-envelope"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-phone-alt"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-ellipsis-h"></i></a>
                                 </td>
                             </tr>
                             <tr data-bs-toggle="offcanvas" data-bs-target="#contactDetailOffcanvas" aria-controls="contactDetailOffcanvas">
-                                <td class="ps-4 d-flex align-items-center position-relative">
-                                    <img src="https://i.pravatar.cc/35?img=6" class="avatarprofilecontact" alt="Avatar">
-                                    <span class="status-indicator offline-red"></span>
-                                    Teresa Lloyd
+                                <td class="ps-4 position-relative">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://i.pravatar.cc/35?img=6" class="avatarprofilecontact" alt="Avatar">
+                                        <span class="status-indicator offline-red"></span>
+                                        <span class="ms-2">Teresa Lloyd</span>
+                                    </div>
                                 </td>
-                                <td class="text-muted">PR Agent</td>
-                                <td class="text-muted">938-758-8719</td>
+                                <td class="text">PR Agent</td>
+                                <td class="text">938-758-8719</td>
                                 <td><span class="badge custom-badge-business p-2">Business</span></td>
                                 <td class="table-actions">
-                                    <i class="fas fa-phone-alt me-3 text-muted"></i>
-                                    <i class="fas fa-envelope me-3 text-muted"></i>
-                                    <i class="fas fa-ellipsis-h text-muted"></i>
+                                    <a href="#!" class="action-btn"><i class="fas fa-envelope"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-phone-alt"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-ellipsis-h"></i></a>
                                 </td>
                             </tr>
-                             </tbody>
+                            <tr data-bs-toggle="offcanvas" data-bs-target="#contactDetailOffcanvas" aria-controls="contactDetailOffcanvas">
+                                <td class="ps-4 position-relative">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://i.pravatar.cc/35?img=7" class="avatarprofilecontact" alt="Avatar">
+                                        <span class="status-indicator online"></span>
+                                        <span class="ms-2">Fred Haynes</span>
+                                    </div>
+                                </td>
+                                <td class="text">Support Team</td>
+                                <td class="text">327-857-2638</td>
+                                <td><span class="badge custom-badge-business p-2">Business</span></td>
+                                <td class="table-actions">
+                                    <a href="#!" class="action-btn"><i class="fas fa-envelope"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-phone-alt"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-ellipsis-h"></i></a>
+                                </td>
+                            </tr>
+                            <tr data-bs-toggle="offcanvas" data-bs-target="#contactDetailOffcanvas" aria-controls="contactDetailOffcanvas">
+                                <td class="ps-4 position-relative">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://i.pravatar.cc/35?img=8" class="avatarprofilecontact" alt="Avatar">
+                                        <span class="status-indicator offline"></span>
+                                        <span class="ms-2">Rose Peters</span>
+                                    </div>
+                                </td>
+                                <td class="text">Project Manager</td>
+                                <td class="text">410-629-6613</td>
+                                <td><span class="badge custom-badge-business p-2">Business</span></td>
+                                <td class="table-actions">
+                                    <a href="#!" class="action-btn"><i class="fas fa-envelope"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-phone-alt"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-ellipsis-h"></i></a>
+                                </td>
+                            </tr>
+                            <tr data-bs-toggle="offcanvas" data-bs-target="#contactDetailOffcanvas" aria-controls="contactDetailOffcanvas">
+                                <td class="ps-4 position-relative">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://i.pravatar.cc/35?img=9" class="avatarprofilecontact" alt="Avatar">
+                                        <span class="status-indicator online"></span>
+                                        <span class="ms-2">Brian Watson</span>
+                                    </div>
+                                </td>
+                                <td class="text">Developer</td>
+                                <td class="text">626-460-7538</td>
+                                <td><span class="badge custom-badge-business p-2">Business</span></td>
+                                <td class="table-actions">
+                                    <a href="#!" class="action-btn"><i class="fas fa-envelope"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-phone-alt"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-ellipsis-h"></i></a>
+                                </td>
+                            </tr>
+                            <tr data-bs-toggle="offcanvas" data-bs-target="#contactDetailOffcanvas" aria-controls="contactDetailOffcanvas">
+                                <td class="ps-4 position-relative">
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://i.pravatar.cc/35?img=10" class="avatarprofilecontact" alt="Avatar">
+                                        <span class="status-indicator online"></span>
+                                        <span class="ms-2">Elijah Hogan</span>
+                                    </div>
+                                </td>
+                                <td class="text">Developer</td>
+                                <td class="text">626-460-77538</td>
+                                <td><span class="badge custom-badge-business p-2">Business</span></td>
+                                <td class="table-actions">
+                                    <a href="#!" class="action-btn"><i class="fas fa-envelope"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-phone-alt"></i></a>
+                                    <a href="#!" class="action-btn"><i class="fas fa-ellipsis-h"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div class="card-footer bg-white d-flex justify-content-between align-items-center py-3">
@@ -250,23 +328,29 @@
         </div>
     </div>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="contactDetailOffcanvas" aria-labelledby="contactDetailOffcanvasLabel" style="width: 550px;">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="contactDetailOffcanvas" aria-labelledby="contactDetailOffcanvasLabel" style="width: 40vw;">
         <div class="offcanvas-header">
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body pt-0">
-            <div class="text-center mb-4">
-                <img src="https://i.pravatar.cc/120?img=15" class="offcanvas-profile-img mb-3" alt="Profile Picture">
-                <h4 class="mb-1">Johanna Stevens</h4>
-                <p class="text-muted small">UI/UX Designer</p>
-            </div>
-            <div class="d-flex justify-content-center gap-2 mb-4">
-                <button class="btn btn-primary btn-message flex-grow-1">
-                    <i class="fas fa-comment-dots me-2"></i>Message
-                </button>
-                <button class="btn btn-outline-secondary"><i class="fas fa-phone-alt"></i></button>
-                <button class="btn btn-outline-secondary"><i class="fas fa-ellipsis-h"></i></button>
-                <button class="btn btn-outline-secondary"><i class="fas fa-envelope"></i></button>
+        <div class="offcanvas-body p-4 pt-5">
+            <div class="mb-4 d-flex justify-content-center">
+                <div>
+                    <img src="https://i.pravatar.cc/120?img=15" class="offcanvas-profile-img mb-3" alt="Profile Picture">
+
+                    <div class="mb-3">
+                        <h4 class="mb-0 fw-bold">Johanna Stevens</h4>
+                        <p class="text-muted small mb-0">UI/UX Designer</p>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-primary btn-message">
+                            <i class="fas fa-comment-dots me-2"></i>Message
+                        </button>
+                        <button class="btn btn-outline-secondary"><i class="fas fa-phone-alt"></i></button>
+                        <button class="btn btn-outline-secondary"><i class="fas fa-envelope"></i></button>
+                        <button class="btn btn-outline-secondary"><i class="fas fa-ellipsis-h"></i></button>
+                    </div>
+                </div>
             </div>
 
             <div class="contact-detail-list">
@@ -274,16 +358,17 @@
                     <span class="detail-label text-muted">Bio</span>
                     <p class="detail-value mb-0">When I first got into the advertising, I was looking for the magical combination that would put website into the top search engine rankings</p>
                 </div>
-                 <div class="detail-item">
+                <div class="detail-item">
                     <span class="detail-label text-muted">Email</span>
-                    <div class="detail-value">
-                        <span>johanna.stevens@gmail.com</span>
-                        <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill fw-normal">Primary</span>
+                    <div class="detail-value-stacked">
+                        <div class="d-flex justify-content-between w-100">
+                            <span>johanna.stevens@gmail.com</span>
+                            <span class="badge custom-badge-primary">Primary</span>
+                        </div>
+                        <div class="d-flex w-100">
+                            <span>johanna.stevens@whitesi.store</span>
+                        </div>
                     </div>
-                </div>
-                 <div class="detail-item">
-                    <span class="detail-label text-muted"></span>
-                    <span class="detail-value">johanna.stevens@whitesi.store</span>
                 </div>
                  <div class="detail-item">
                     <span class="detail-label text-muted">Dial</span>
@@ -293,18 +378,19 @@
                     <span class="detail-label text-muted">Meeting</span>
                     <span class="detail-value text-primary">http://go.betacall.com/meet/j.stevens</span>
                 </div>
-                 <div class="detail-item">
+                <div class="detail-item">
                     <span class="detail-label text-muted">Phone</span>
-                     <div class="detail-value">
-                        <span>439-582-1578</span>
-                        <span class="badge bg-primary-subtle text-primary-emphasis rounded-pill fw-normal">Primary</span>
+                    <div class="detail-value-stacked">
+                        <div class="d-flex justify-content-between w-100">
+                            <span>439-582-1578</span>
+                            <span class="badge custom-badge-primary">Primary</span>
+                        </div>
+                        <div class="d-flex w-100">
+                            <span>621-770-7689</span>
+                        </div>
                     </div>
                 </div>
-                 <div class="detail-item">
-                    <span class="detail-label text-muted"></span>
-                    <span class="detail-value">621-770-7689</span>
-                </div>
-                <div class="detail-item">
+                <div class="detail-item mt-5">
                     <span class="detail-label text-muted">Social</span>
                     <div class="detail-value social-icons">
                         <a href="#!" class="social-icon-wrapper"><i class="fab fa-facebook-f"></i></a>
