@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom justify-content-between">
+        
+        <div class="navbar-brand d-flex align-items-center ps-3 gap-3 gap-md-11">
+            <div class="d-flex align-items-center justify-content-center gap-3">
+                <button class="btn btn-outline-secondary border-0 p-2" id="iconSidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h5 class="mb-0 fw-bold">Contacts</h5>
+            </div>
+
+            <div class="navbar-center-icons ms-2">
+                <a href="#!" class="nav-icon-link"><i class="bi bi-sliders2"></i></a>
+                <a href="#!" class="nav-icon-link"><i class="bi bi-three-dots-vertical"></i></a>
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center pe-3" id="navbar-right-icons">
+            <a href="#!" class="nav-icon-link"><i class="bi bi-person-plus-fill"></i></a>
+            <a href="#!" class="nav-icon-link"><i class="bi bi-search"></i></a>
+            
+            <div class="dropdown">
+                <button class="btn btn-link p-0 d-flex align-items-center" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://i.pravatar.cc/35?img=1" class="rounded-circle" alt="Avatar" style="width: 35px; height: 35px;">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#!">Profile</a></li>
+                    <li><a class="dropdown-item" href="#!">Settings</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#!">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="d-flex" id="main-wrapper">
+        <div class="icon-sidebar bg-white d-flex flex-column justify-content-center" id="iconSidebar">
+            <div class="sidebar-logo-container d-flex align-items-center justify-content-center">
+                <div class="logo-circle"></div>
+            </div>
+            <ul class="list-group list-group-flush py-2 container">
+                <li class="list-group-item icon-item active">
+                    <a href="#!"><i class="fas fa-home"></i></a>
+                </li>
+                <li class="list-group-item icon-item position-relative">
+                    <a href="#!"><i class="fas fa-comment-dots"></i></a>
+                    <span class="status-indicator online small-dot"></span>
+                </li>
+                <li class="list-group-item icon-item position-relative">
+                    <a href="#!"><i class="fas fa-phone-alt"></i></a>
+                    <span class="status-indicator online small-dot"></span>
+                </li>
+                <li class="list-group-item icon-item">
+                    <a href="#!"><i class="fas fa-desktop"></i></a>
+                </li>
+                <li class="list-group-item icon-item">
+                    <a href="#!"><i class="fas fa-users-cog"></i></a>
+                </li>
+                <li class="list-group-item icon-item">
+                    <a href="#!"><i class="fas fa-file-alt"></i></a>
+                </li>
+                <li class="list-group-item icon-item position-relative">
+                    <a href="#!"><i class="fas fa-calendar-alt"></i></a>
+                    <span class="status-indicator online small-dot"></span>
+                </li>
+                <li class="list-group-item icon-item">
+                    <a href="#!"><i class="fas fa-cog"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="d-flex flex-grow-1" id="wrapper">
+            <div class="text-sidebar border-end bg-white" id="textSidebar">
+                <div class="list-group list-group-flush py-2 px-3">
+                    <a class="list-group-item list-group-item-action p-3 active" href="#!">
+                        <div class="d-flex align-items-center">
+                            <div class="text-sidebar-icon-wrapper active-icon me-3">
+                                <i class="fas fa-address-book"></i>
+                            </div>
+                            <span class="fw-bold">All Contacts</span>
+                            <span class="badge bg-success rounded-pill ms-auto">99</span>
+                        </div>
+                        <small class="text-muted ms-5">All messages unified</small>
+                    </a>
+                    <a class="list-group-item list-group-item-action border-top p-3" href="#!">
+                        <div class="d-flex align-items-center">
+                            <div class="text-sidebar-icon-wrapper me-3">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            Business
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action border-top p-3" href="#!">
+                        <div class="d-flex align-items-center">
+                            <div class="text-sidebar-icon-wrapper me-3">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            Personal
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action border-top p-3" href="#!">
+                        <div class="d-flex align-items-center">
+                            <div class="text-sidebar-icon-wrapper me-3">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            Cloud
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action border-top p-3" href="#!">
+                        <div class="d-flex align-items-center">
+                            <div class="text-sidebar-icon-wrapper me-3">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            Customers
+                        </div>
+                    </a>
+                    <a class="list-group-item list-group-item-action border-top text-muted" href="#!">
+                        <div class="d-flex align-items-center">
+                            <div class="text-sidebar-icon-wrapper me-3">
+                                <i class="fas fa-plus-circle"></i>
+                            </div>
+                            Type to add new group
+                        </div>
+                    </a>
+                </div>
+                <div class="list-group list-group-flush mt-auto border-top py-2">
+                    <a class="list-group-item list-group-item-action p-3 text-danger" href="#!">
+                        <div class="d-flex align-items-center">
+                            <div class="text-sidebar-icon-wrapper me-3">
+                                <i class="fas fa-trash-alt"></i>
+                            </div>
+                            Deleted
+                        </div>
+                        <small class="text-muted ms-5">Removed contacts</small>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex-grow-1">
+                <!-- <div class="container-fluid py-4"> -->
+                    <!-- <div class="card shadow-sm border-0"> -->
+                        <!-- <div class="card-body p-0"> -->
+                            <div class="table-responsive">
+                                <table class="table table-borderless mb-0" style="min-height: 84vh;">
+                                    <tbody>
+                                        <tr>
+                                            <td class="ps-4 d-flex align-items-center position-relative">
+                                                <img src="https://via.placeholder.com/40/B3E5FC/000000?text=NG" class="rounded-circle me-3" alt="Avatar">
+                                                <span class="status-indicator online"></span>
+                                                Nicholas Gordon
+                                            </td>
+                                            <td class="text-muted">Developer</td>
+                                            <td class="text-muted">490-645-3877</td>
+                                            <td><span class="badge custom-badge-business p-2">Business</span></td>
+                                            <td class="table-actions">
+                                                <i class="fas fa-phone-alt me-3 text-muted"></i>
+                                                <i class="fas fa-envelope me-3 text-muted"></i>
+                                                <i class="fas fa-ellipsis-h text-muted"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ps-4 d-flex align-items-center position-relative">
+                                                <img src="https://via.placeholder.com/40/FFCCBC/000000?text=BM" class="rounded-circle me-3" alt="Avatar">
+                                                <span class="status-indicator online"></span>
+                                                Bradley Malone
+                                            </td>
+                                            <td class="text-muted">Sales Manager</td>
+                                            <td class="text-muted">940-724-0374</td>
+                                            <td><span class="badge custom-badge-business p-2">Business</span></td>
+                                            <td class="table-actions">
+                                                <i class="fas fa-phone-alt me-3 text-muted"></i>
+                                                <i class="fas fa-envelope me-3 text-muted"></i>
+                                                <i class="fas fa-ellipsis-h text-muted"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ps-4 d-flex align-items-center position-relative">
+                                                <img src="https://via.placeholder.com/40/F8BBD0/000000?text=JT" class="rounded-circle me-3" alt="Avatar">
+                                                <span class="status-indicator offline"></span>
+                                                Janie Todd
+                                            </td>
+                                            <td class="text-muted">Project Manager</td>
+                                            <td class="text-muted">171-867-8227</td>
+                                            <td><span class="badge custom-badge-business p-2">Business</span></td>
+                                            <td class="table-actions">
+                                                <i class="fas fa-phone-alt me-3 text-muted"></i>
+                                                <i class="fas fa-envelope me-3 text-muted"></i>
+                                                <i class="fas fa-ellipsis-h text-muted"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ps-4 d-flex align-items-center position-relative">
+                                                <img src="https://via.placeholder.com/40/D1C4E9/000000?text=ML" class="rounded-circle me-3" alt="Avatar">
+                                                <span class="status-indicator online"></span>
+                                                Marvin Lambert
+                                            </td>
+                                            <td class="text-muted">Designer</td>
+                                            <td class="text-muted">487-646-4299</td>
+                                            <td><span class="badge custom-badge-business p-2">Business</span></td>
+                                            <td class="table-actions">
+                                                <i class="fas fa-phone-alt me-3 text-muted"></i>
+                                                <i class="fas fa-envelope me-3 text-muted"></i>
+                                                <i class="fas fa-ellipsis-h text-muted"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ps-4 d-flex align-items-center position-relative">
+                                                <img src="https://via.placeholder.com/40/A7FFEB/000000?text=TL" class="rounded-circle me-3" alt="Avatar">
+                                                <span class="status-indicator offline-red"></span>
+                                                Teresa Lloyd
+                                            </td>
+                                            <td class="text-muted">PR Agent</td>
+                                            <td class="text-muted">938-758-8719</td>
+                                            <td><span class="badge custom-badge-business p-2">Business</span></td>
+                                            <td class="table-actions">
+                                                <i class="fas fa-phone-alt me-3 text-muted"></i>
+                                                <i class="fas fa-envelope me-3 text-muted"></i>
+                                                <i class="fas fa-ellipsis-h text-muted"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ps-4 d-flex align-items-center position-relative">
+                                                <img src="https://via.placeholder.com/40/C8E6C9/000000?text=FH" class="rounded-circle me-3" alt="Avatar">
+                                                <span class="status-indicator online"></span>
+                                                Fred Haynes
+                                            </td>
+                                            <td class="text-muted">Support Team</td>
+                                            <td class="text-muted">327-857-2638</td>
+                                            <td><span class="badge custom-badge-business p-2">Business</span></td>
+                                            <td class="table-actions">
+                                                <i class="fas fa-phone-alt me-3 text-muted"></i>
+                                                <i class="fas fa-envelope me-3 text-muted"></i>
+                                                <i class="fas fa-ellipsis-h text-muted"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ps-4 d-flex align-items-center position-relative">
+                                                <img src="https://via.placeholder.com/40/FFE0B2/000000?text=RP" class="rounded-circle me-3" alt="Avatar">
+                                                <span class="status-indicator online"></span>
+                                                Rose Peters
+                                            </td>
+                                            <td class="text-muted">Project Manager</td>
+                                            <td class="text-muted">410-629-6613</td>
+                                            <td><span class="badge custom-badge-business p-2">Business</span></td>
+                                            <td class="table-actions">
+                                                <i class="fas fa-phone-alt me-3 text-muted"></i>
+                                                <i class="fas fa-envelope me-3 text-muted"></i>
+                                                <i class="fas fa-ellipsis-h text-muted"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ps-4 d-flex align-items-center position-relative">
+                                                <img src="https://via.placeholder.com/40/D7CCC8/000000?text=BW" class="rounded-circle me-3" alt="Avatar">
+                                                <span class="status-indicator online"></span>
+                                                Brian Watson
+                                            </td>
+                                            <td class="text-muted">Developer</td>
+                                            <td class="text-muted">626-460-7538</td>
+                                            <td><span class="badge custom-badge-business p-2">Business</span></td>
+                                            <td class="table-actions">
+                                                <i class="fas fa-phone-alt me-3 text-muted"></i>
+                                                <i class="fas fa-envelope me-3 text-muted"></i>
+                                                <i class="fas fa-ellipsis-h text-muted"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ps-4 d-flex align-items-center position-relative">
+                                                <img src="https://via.placeholder.com/40/CFD8DC/000000?text=EH" class="rounded-circle me-3" alt="Avatar">
+                                                <span class="status-indicator online"></span>
+                                                Elijah Hogan
+                                            </td>
+                                            <td class="text-muted">Developer</td>
+                                            <td class="text-muted">626-460-7538</td>
+                                            <td><span class="badge custom-badge-business p-2">Business</span></td>
+                                            <td class="table-actions">
+                                                <i class="fas fa-phone-alt me-3 text-muted"></i>
+                                                <i class="fas fa-envelope me-3 text-muted"></i>
+                                                <i class="fas fa-ellipsis-h text-muted"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            <!-- </div> -->
+                        <!-- </div> -->
+                        <div class="card-footer bg-white d-flex justify-content-between align-items-center py-3">
+                            <button class="btn btn-sm btn-outline-secondary border-0 text-muted"><i class="fas fa-chevron-left me-2"></i> Prev</button>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination pagination-sm mb-0">
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                </ul>
+                            </nav>
+                            <button class="btn btn-sm btn-outline-secondary border-0 text-muted">Next <i class="fas fa-chevron-right ms-2"></i></button>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var iconSidebarToggle = document.getElementById('iconSidebarToggle');
+
+            if (iconSidebarToggle) {
+                iconSidebarToggle.addEventListener('click', function() {
+                    document.body.classList.toggle('icon-sidebar-hidden');
+                });
+            }
+
+            function setInitialSidebarState() {
+                if (window.innerWidth < 768) {
+                    document.body.classList.add('icon-sidebar-hidden'); 
+                } else {
+                    document.body.classList.remove('icon-sidebar-hidden'); 
+                }
+            }
+
+            setInitialSidebarState();
+            window.addEventListener('resize', setInitialSidebarState);
+        });
+    </script>
+</body>
+</html>
