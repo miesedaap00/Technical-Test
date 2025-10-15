@@ -235,21 +235,18 @@ body.icon-sidebar-hidden .text-sidebar {
     font-weight: 600 !important;
 }
 
-/* Wadah tak terlihat untuk ikon agar ukurannya konsisten */
 .sidebar-icon-container {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 30px; /* Lebar wadah yang tetap untuk semua ikon */
+    width: 30px; 
 }
 
-/* Warna ikon default */
 .text-sidebar .list-group-item i {
     color: #6c757d;
     font-size: 1.1rem;
 }
 
-/* Warna ikon dan teks saat item aktif */
 .text-sidebar .list-group-item.active,
 .text-sidebar .list-group-item.active i {
     color: #0d6efd;
@@ -366,10 +363,10 @@ body.icon-sidebar-hidden #page-content-wrapper {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    position: absolute; /* Penting agar tidak mempengaruhi layout flow */
-    left: 45px; /* Sesuaikan ini agar tepat di pojok avatar */
-    top: 25px; /* Sesuaikan ini agar tepat di pojok avatar */
-    border: 2px solid white; /* Border putih agar lebih terlihat */
+    position: absolute; 
+    left: 45px; 
+    top: 25px; 
+    border: 2px solid white; 
     z-index: 10;
 }
 .status-indicator.small-dot {
@@ -381,15 +378,15 @@ body.icon-sidebar-hidden #page-content-wrapper {
 }
 
 .status-indicator.online {
-    background-color: #28a745; /* Hijau untuk online */
+    background-color: #28a745;
 }
 
 .status-indicator.offline {
-    background-color: #6c757d; /* Abu-abu untuk offline */
+    background-color: #6c757d; 
 }
 
 .status-indicator.offline-red {
-    background-color: #dc3545; /* Merah untuk offline-red */
+    background-color: #dc3545;
 }
 .custom-badge-business {
     background-color: #e6f0ff;
@@ -399,7 +396,6 @@ body.icon-sidebar-hidden #page-content-wrapper {
     border-radius: 5px;
 }
 
-/* Card and Table Styling - BORDERLESS */
 .card { border-radius: 10px; }
 .card-header { border-bottom: 1px solid #e9ecef; }
 .card-body { padding-top: 0; padding-bottom: 0; }
@@ -414,7 +410,7 @@ body.icon-sidebar-hidden #page-content-wrapper {
     background-color: transparent;
     border: none;
     box-shadow: none;
-    cursor: pointer; /* Make rows look clickable */
+    cursor: pointer; 
     transition: background-color 0.2s ease-in-out;
 }
 .table tbody td {
@@ -425,7 +421,7 @@ body.icon-sidebar-hidden #page-content-wrapper {
     color: #495057;
 }
 .table tbody tr:hover {
-    background-color: #f8f9fa; /* Add a hover effect */
+    background-color: #f8f9fa;
 }
 .table-actions i {
     cursor: pointer;
@@ -433,17 +429,15 @@ body.icon-sidebar-hidden #page-content-wrapper {
     color: #929292;
 }
 
-/* Kolom 1: Nama Kontak */
 .table tbody tr td:first-child span.ms-2 {
-    font-weight: 700; /* Bold */
-    color: #1A1C1D;   /* Hitam */
+    font-weight: 700; 
+    color: #1A1C1D; 
 }
 
-/* Kolom 2 (Jabatan) & Kolom 3 (No. Telepon) */
 .table tbody tr td:nth-child(2),
 .table tbody tr td:nth-child(3) {
-    font-weight: 700; /* Bold */
-    color: #8083A3;   /* Abu-abu (muted) */
+    font-weight: 700; 
+    color: #8083A3;   
 }
 
 .action-btn {
@@ -454,27 +448,26 @@ body.icon-sidebar-hidden #page-content-wrapper {
     height: 38px;
     background-color: #ffffff;
     border: 1px solid #e9ecef;
-    color: #8083A3; /* Warna ikon abu-abu */
-    border-radius: 12px; /* Radius yang lebih proporsional */
+    color: #8083A3;
+    border-radius: 12px;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
 
 .action-btn:hover {
-    background-color: #f8f9fa; /* Warna latar abu-abu saat hover */
-    color: #0d6efd; /* Warna ikon biru saat hover */
+    background-color: #f8f9fa; 
+    color: #0d6efd;
 }
 
 .avatarprofilecontact {
-    width: 35px; /* Atau ukuran yang Anda inginkan */
+    width: 35px; 
     height: 35px;
     border-radius: 20%;
     object-fit: cover;
-    margin-right: 20px; /* Memberikan jarak antara gambar dan teks */
+    margin-right: 20px; 
 }
 
 /* Paginasi Styling */
-/* .card-footer { border-top: 1px solid #e9ecef; } */
 .pagination .page-item .page-link {
     border: 1px solid #e9ecef;
     border-radius: 5px;
@@ -508,21 +501,20 @@ body.icon-sidebar-hidden #page-content-wrapper {
 
 /* --- Offcanvas Styling --- */
 .offcanvas {
-    z-index: 1200; /* Higher than the navbar's z-index of 1100 */
+    z-index: 1200;
 }
 
 .offcanvas-header {
-    padding: 0.75rem 1.25rem; /* Reduced padding */
+    padding: 0.75rem 1.25rem; 
 }
 
 .offcanvas-profile-img {
-    width: 100px; /* Smaller profile image */
+    width: 100px; 
     height: 100px;
     border-radius: 20%;
     object-fit: cover;
 }
 
-/* Smaller fonts for name and title */
 .offcanvas-body h4 {
     font-size: 1.15rem;
 }
@@ -530,7 +522,6 @@ body.icon-sidebar-hidden #page-content-wrapper {
     font-size: 0.8rem;
 }
 
-/* Smaller buttons */
 .btn-message, .offcanvas-body .btn-outline-secondary {
     padding: 0.4rem 0.8rem;
     font-size: 0.85rem;
@@ -538,11 +529,11 @@ body.icon-sidebar-hidden #page-content-wrapper {
 
 .contact-detail-list .detail-item {
     display: grid;
-    grid-template-columns: 90px 1fr; /* Adjusted column width */
+    grid-template-columns: 90px 1fr;
     gap: 1rem;
-    padding: 0.75rem 0; /* Reduced padding */
+    padding: 0.75rem 0;
     align-items: start;
-    font-size: 0.85rem; /* Smaller font for all items */
+    font-size: 0.85rem;
 }
 
 .contact-detail-list .detail-item:last-child {
@@ -550,7 +541,7 @@ body.icon-sidebar-hidden #page-content-wrapper {
 }
 
 .contact-detail-list .detail-label {
-    font-size: 0.8rem; /* Smaller label font */
+    font-size: 0.8rem; 
     text-align: right;
 }
 
@@ -569,13 +560,13 @@ body.icon-sidebar-hidden #page-content-wrapper {
 }
 
 #contactDetailOffcanvas .btn-close {
-    width: 15px;                /* Smaller close button */
+    width: 15px;                
     height: 15px;
-    border: 1px solid #e9ecef;  /* Adds a light grey border */
-    border-radius: 10px;        /* Rounds the corners of the border */
-    margin-top: 0.5rem;        /* Adds some space from the top */
-    margin-right: 0.5rem;      /* Adds some space from the right */
-    padding: 0.5rem;            /* Adds some space around the 'X' icon */
+    border: 1px solid #e9ecef;
+    border-radius: 10px;        
+    margin-top: 0.5rem;       
+    margin-right: 0.5rem;      
+    padding: 0.5rem;           
 }
 
 .custom-badge-primary {
@@ -590,12 +581,12 @@ body.icon-sidebar-hidden #page-content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.35rem; /* Mengatur jarak antar email (sesuaikan jika perlu) */
+    gap: 0.35rem; 
     width: 100%;
 }
 
 .social-icon-wrapper {
-    width: 30px; /* Smaller social icons */
+    width: 30px; 
     height: 30px;
     border: 1px solid #e9ecef;
     border-radius: 20%;
