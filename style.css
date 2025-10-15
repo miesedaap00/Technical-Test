@@ -9,7 +9,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #ffffffff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -68,6 +68,13 @@ body.icon-sidebar-hidden .navbar {
     display: flex;
     gap: 24px; 
     position: sticky;
+}
+
+.avatarprofile {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 #main-wrapper {
@@ -131,37 +138,47 @@ body.icon-sidebar-hidden .icon-sidebar {
 .icon-sidebar .list-group-item.icon-item {
     border: none;
     text-align: center;
-    padding: 12px 0;
+    padding: 8px 0;
     margin-top: 0;
     margin-bottom: 0;
 }
 .icon-sidebar .list-group-item.icon-item a {
     color: #6c757d;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
 }
 .icon-sidebar .list-group-item.icon-item.active {
-    background-color: #e6f0ff;
-    border-left: 3px solid #0d6efd;
-    margin-left: -3px;
+    background-color: transparent;
+    border-left: none;
+    margin-left: 0;
     padding-left: 0;
 }
 .icon-sidebar .list-group-item.icon-item.active a {
     color: #0d6efd;
+    background-color: white;
+    border: 1px solid #e9ecef;
 }
 .icon-sidebar .list-group-item.icon-item:hover {
-    background-color: #f0f2f5;
+    background-color: transparent;
 }
 .icon-sidebar .list-group-item.icon-item:hover a {
     color: #0d6efd;
+    background-color: #e6f0ff;
 }
 
 .status-indicator.small-dot {
     width: 8px;
     height: 8px;
     top: 15px;
-    left: 35px;
+    left: 10px;
     border: 1px solid white;
 }
 
@@ -325,21 +342,21 @@ body.icon-sidebar-hidden #page-content-wrapper {
 }
 
 .status-indicator {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 45px;
+    top: 70%;
+    left: 55px;
     transform: translateY(-50%);
     border: 2px solid white;
 }
 .status-indicator.small-dot {
-    width: 8px;
-    height: 8px;
-    top: 15px;
-    left: 35px;
-    border: 1px solid white;
+    width: 12px;
+    height: 12px;
+    top: 12px;
+    left: 53px;
+    border: 2px solid white;
 }
 .status-indicator.online { background-color: #28a745; }
 .status-indicator.offline { background-color: #6c757d; }
@@ -361,6 +378,8 @@ body.icon-sidebar-hidden #page-content-wrapper {
 .table {
     border-collapse: collapse;
     background-color: transparent;
+    font-size: 14px;
+    padding-top: 1rem;
 }
 .table tbody tr {
     background-color: transparent;
@@ -369,8 +388,8 @@ body.icon-sidebar-hidden #page-content-wrapper {
 }
 .table tbody td {
     border: none;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     vertical-align: middle;
     color: #495057;
 }
@@ -383,26 +402,34 @@ body.icon-sidebar-hidden #page-content-wrapper {
     color: #929292;
 }
 
+.avatarprofilecontact {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
 /* Paginasi Styling */
-.card-footer { border-top: 1px solid #e9ecef; }
+/* .card-footer { border-top: 1px solid #e9ecef; } */
 .pagination .page-item .page-link {
-    border: none;
+    border: 1px solid #e9ecef;
     border-radius: 5px;
-    margin: 0 3px;
-    color: #6c757d;
-    background-color: #f8f9fa;
-    font-weight: normal;
-    min-width: 35px;
+    margin: 0 2px;
+    color: #252525;
+    background-color: white;
+    font-weight: bold;
+    min-width: 30.33px;
     text-align: center;
 }
 .pagination .page-item.active .page-link {
-    background-color: #0d6efd;
+    background-color: #2485C5;
     color: white;
     font-weight: bold;
 }
 .pagination .page-item .page-link:hover:not(.active) {
     background-color: #e9ecef;
-    color: #0d6efd;
+    color: #2485C5;
 }
 .card-footer .btn-outline-secondary { color: #6c757d; }
 .card-footer .btn-outline-secondary:hover {
