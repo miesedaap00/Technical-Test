@@ -208,7 +208,7 @@ body.icon-sidebar-hidden .icon-sidebar {
     background-color: white;
     border-right: 1px solid #e9ecef;
     display: flex;
-    flex-direction: column; /* Mengatur item di dalamnya (menu & tombol delete) secara vertikal */
+    flex-direction: column;
     z-index: 1000;
     transition: margin-left var(--transition-speed);
     flex-shrink: 0;
@@ -218,12 +218,10 @@ body.icon-sidebar-hidden .icon-sidebar {
     margin-left: var(--icon-sidebar-width);
 }
 
-/* Mengatur posisi sidebar saat icon-sidebar disembunyikan */
 body.icon-sidebar-hidden .text-sidebar {
     margin-left: 0;
 }
 
-/* 2. Styling Daftar Menu (List Group) */
 .text-sidebar .list-group {
     border-radius: 0;
 }
@@ -236,51 +234,44 @@ body.icon-sidebar-hidden .text-sidebar {
 
 }
 
-/* Item pertama tidak memiliki garis pemisah di atasnya */
 .text-sidebar .list-group-flush:first-child .list-group-item:first-child {
     border-top: none;
 }
 
 .text-sidebar .list-group-item:hover {
-    background-color: #f8f9fa; /* Efek hover saat mouse mendekat */
+    background-color: #f8f9fa;
 }
 
-/* 3. Styling untuk Item yang Sedang Aktif */
 .text-sidebar .list-group-item.active {
     background-color: #f0f7ff;
     border-radius: 10px;
     margin-bottom: 1rem;
-    color: #2485C5; /* Warna teks utama menjadi biru */
+    color: #2485C5;
     font-weight: normal;
-    border-top: none; /* Menghapus garis pemisah saat aktif */
+    border-top: none; 
 }
 
-/* Mengatur warna sub-teks (misal: "All messages unified") saat item aktif */
 .text-sidebar .list-group-item.active .text-muted {
     color: #8e9aaf !important;
 }
 
-/* Mengatur warna teks yang bold saat item aktif */
 .text-sidebar .list-group-item.active .fw-bold {
     color: #2485C5;
     font-weight: 600 !important;
 }
 
-/* 4. Styling untuk Ikon */
 .sidebar-icon-container {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 30px; /* Wadah tak terlihat untuk membuat ikon sejajar */
+    width: 30px; 
 }
 
-/* Warna default ikon */
 .text-sidebar .list-group-item i {
     color: #6c757d;
     font-size: 1.1rem;
 }
 
-/* Warna ikon saat item-nya aktif */
 .text-sidebar .list-group-item.active i {
     color: #2485C5;
 }
